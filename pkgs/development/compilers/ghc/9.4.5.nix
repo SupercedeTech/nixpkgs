@@ -177,7 +177,7 @@ assert buildTargetLlvmPackages.llvm == llvmPackages.llvm;
 assert stdenv.targetPlatform.isDarwin -> buildTargetLlvmPackages.clang == llvmPackages.clang;
 
 stdenv.mkDerivation (rec {
-  version = "9.4.5";
+  version = "9.4.4";
   pname = "${targetPrefix}ghc${variantSuffix}";
 
   src = fetchurl {
